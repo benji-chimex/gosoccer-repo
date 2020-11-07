@@ -1,0 +1,198 @@
+.body {
+    padding: 1.2rem;
+    z-index: 0;
+}
+.body__animation {
+    transform: translateX(-3000px);
+    animation-name: body;
+    animation-delay: 2s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+.body__minor {
+    margin-left: 1rem;
+    margin-top: -2.5rem;
+    padding-top: .7rem;
+}
+.h-text{
+    font-family: 'Pacifico', cursive;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.p-text{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+._text {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+}
+.t_logo {
+    width: 4rem;
+    height: 5rem;
+}
+.heading {
+    font-family: 'Pacifico', cursive;
+    font-size: 3rem;
+    font-weight: 600;
+    margin: .6rem;
+}
+.t-text {
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.t--text {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+}
+.c-text {
+    font-size: 4rem;
+    color: rgba(1, 1, 41, 0.797);
+    font-weight: 600;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.cx-text {
+    font-size: 1.2rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+}
+.border {
+    color:green !important;
+}
+.scale {
+    animation-name: scaled;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+}
+@keyframes body {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes scaled {
+    0% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(2)
+    }
+}
+.nav {
+    display: flex;
+    z-index: 10;
+    align-items: center;
+    height: 65px;
+}
+.nav__animation {
+    transform: translateY(-300px);
+    animation-name: nav;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+.nav__menu {
+    flex: 0 0 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.nav__logo {
+    flex: 0 0 50%;
+}
+.nav__list {
+    list-style: none;
+}
+.nav__list li {
+    display: inline-block;
+    margin: 0 1rem;
+}
+.nav__link {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+}
+.nav--text {
+    font-family: 'Pacifico', cursive;
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+.nav__form {
+    margin-left: .7rem;
+}
+.nav__from a {
+    margin: 0 .5rem;
+    color: rgba(1, 1, 41, 0.797);
+}
+.side--text {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: .6rem;
+}
+.text {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.link {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+.-text {
+    font-family: 'Lato', sans-serif;
+    font-size: 8px;
+    font-weight: 500; 
+}
+.c-text {
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+}
+.img {
+    max-width: 100%;
+    height: auto;
+}
+.icon {
+    font-size: 24px;
+    font-weight: 700;
+}
+.card_auth {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+@keyframes nav {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
