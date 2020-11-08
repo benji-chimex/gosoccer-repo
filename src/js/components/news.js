@@ -16,11 +16,11 @@ export default {
     },
     created() {
         window.addEventListener("load", (e) => {
-            // this.$store.dispatch("getStandings", "2790");
-            // this.$store.dispatch("getStandings", "2833");
-            // this.$store.dispatch("getStandings", "2755");
-            // this.$store.dispatch("getStandings", "2857");
-            // this.$store.dispatch("getStandings", "2664");
+            this.$store.dispatch("getStandings", "2790");
+            this.$store.dispatch("getStandings", "2833");
+            this.$store.dispatch("getStandings", "2755");
+            this.$store.dispatch("getStandings", "2857");
+            this.$store.dispatch("getStandings", "2664");
         })
     }
 }

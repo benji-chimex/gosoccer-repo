@@ -24,10 +24,10 @@ export default {
         }
     },
     created() {
-        if(this.$route.params.league === "champs") {
+        if(this.$route.params.league === "champs" || this.$route.params.league_id === "2771") {
             this.$store.dispatch("getChampsStandings");
             this.$store.dispatch("getChampsTopStats");
-        } else if(this.$route.params.league === "europa") {
+        } else if(this.$route.params.league === "europa" || this.$route.params.league_id === "2777") {
             this.$store.dispatch("getEuropaStandings");
             this.$store.dispatch("getEuropaTopStats");
         }

@@ -57,7 +57,7 @@ export default [
                 }
             },
             {
-                path: "fixture/:fixture_id",
+                path: "fixture/:league_id/:fixture_id",
                 components: {
                     "fixture": fixture
                 }
@@ -89,7 +89,7 @@ export default [
                 }
             },
             {
-                path: "fixture/:fixture_id",
+                path: "fixture/:league_id/:fixture_id",
                 components: {
                     "g_fixture": fixture
                 }

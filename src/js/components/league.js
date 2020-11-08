@@ -36,19 +36,19 @@ export default {
         }
     },
     created() {
-        if(this.$route.params.league === "epl") {
+        if(this.$route.params.league === "epl" || this.$route.params.league_id === "2790") {
             this.$store.dispatch("getEplStandings");
             this.$store.dispatch("getEplTopStats");
-        } else if(this.$route.params.league === "laliga") {
+        } else if(this.$route.params.league === "laliga" || this.$route.params.league_id === "2833") {
             this.$store.dispatch("getlaLigaStandings");
             this.$store.dispatch("getlaLigaTopStats");
-        } else if(this.$route.params.league === "seriaA") {
+        } else if(this.$route.params.league === "seriaA" || this.$route.params.league_id === "2857") {
             this.$store.dispatch("getseriaAStandings");
             this.$store.dispatch("getseriaATopStats");
-        } else if(this.$route.params.league === "bundesliga") {
+        } else if(this.$route.params.league === "bundesliga" || this.$route.params.league_id === "2755") {
             this.$store.dispatch("getBundesligaStandings");
             this.$store.dispatch("getBundesligaTopStats");
-        } else if(this.$route.params.league === "ligueOne") {
+        } else if(this.$route.params.league === "ligueOne" || this.$route.params.league_id === "2664") {
             this.$store.dispatch("getligueOneStandings");
             this.$store.dispatch("getligueOneTopStats");
         }

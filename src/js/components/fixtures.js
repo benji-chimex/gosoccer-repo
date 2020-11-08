@@ -51,19 +51,19 @@ export default {
             e.preventDefault();
             let id = e.target.id;
             if(this.$route.params.league === "epl") {
-                window.location.assign(`/leagues/2790/fixture/${id}`);
+                window.location.assign(`/leagues/epl/fixture/2790/${id}`);
             } else if(this.$route.params.league === "laliga") {
-                window.location.assign(`/leagues/2833/fixture/${id}`);
+                window.location.assign(`/leagues/laliga/fixture/2833/${id}`);
             } else if(this.$route.params.league === "seriaA") {
-                window.location.assign(`/leagues/2857/fixture/${id}`);
+                window.location.assign(`/leagues/seriaA/fixture/2857/${id}`);
             } else if(this.$route.params.league === "bundesliga") {
-                window.location.assign(`/leagues/2755/fixture/${id}`);
+                window.location.assign(`/leagues/bundesliga/fixture/2755/${id}`);
             } else if(this.$route.params.league === "ligueOne") {
-                window.location.assign(`/leagues/2664/fixture/${id}`);
+                window.location.assign(`/leagues/ligueOne/fixture/2664/${id}`);
             } else if(this.$route.params.league === "champs") {
-                window.location.assign(`/_leagues/2771/fixture/${id}`);
+                window.location.assign(`/_leagues/champs/fixture/2771/${id}`);
             } else if(this.$route.params.league === "europa") {
-                window.location.assign(`_/leagues/2777/fixture/${id}`);
+                window.location.assign(`_/leagues/europa/fixture/2777/${id}`);
             } 
         }
     }

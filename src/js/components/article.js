@@ -24,7 +24,7 @@ export default {
     },
     created() {
         this.$store.dispatch("getANews", this.article);
-        // this.$store.dispatch("getStanding", this.choice());
+        this.$store.dispatch("getStanding", this.choice());
         document.addEventListener("DOMContentLoaded", () => {
             let el = document.querySelectorAll(".dropdown-trigger");
             let instance = M.Dropdown.init(el);

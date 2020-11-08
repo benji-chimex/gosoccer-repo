@@ -171,7 +171,7 @@
             </div>
             <div class="col s5 offset-s1">
                 <div class="card">
-                    <h2 class="side--text center">{{standing[0]}} League Table</h2>
+                    <h2 class="side--text center">{{standing[0].group}} League Table</h2>
                     <div class="card-content">
                         <table class="striped centered" style="margin-top: -1.5rem;">
                             <thead>
@@ -181,17 +181,17 @@
                             </thead>
                             <tbody>
                                 <tr v-for="data in standing">
-                                    <td class="p-text">{{data.rank}}</td>
+                                    <td class="t-text">{{data.rank}}</td>
                                     <td><img :src="data.logo" alt="logo" class="t_logo"></td>
-                                    <td class="p-text">
+                                    <td class="t-text">
                                         {{data.teamName}}
                                     </td>
-                                    <td class="p-text">{{data.all.matchsPlayed}}</td>
-                                    <td class="p-text">{{data.all.win}}</td>
-                                    <td class="p-text">{{data.all.draw}}</td>
-                                    <td class="p-text">{{data.all.lose}}</td>
-                                    <td class="p-text">{{data.all.goalsFor - data.all.goalsAgainst}}</td>
-                                    <td class="p-text">{{data.points}}</td>
+                                    <td class="t-text">{{data.all.matchsPlayed}}</td>
+                                    <td class="t-text">{{data.all.win}}</td>
+                                    <td class="t-text">{{data.all.draw}}</td>
+                                    <td class="t-text">{{data.all.lose}}</td>
+                                    <td class="t-text">{{data.all.goalsFor - data.all.goalsAgainst}}</td>
+                                    <td class="t-text">{{data.points}}</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -303,8 +303,8 @@
     <!-- Minor -->
     <template id="body-minor">
         <div class="col s5 offset-s1">
-            <div class="body__minor card" v-for="standing in standings">
-                <h2 class="side--text center">{{standing[0].group}} League Table</h2>
+            <div class="card" v-for="standing in standings">
+                <h2 class="h-text center">{{standing[0].group}} League Table</h2>
                 <div class="card-content">
                     <table class="striped centered" style="margin-top: -1.5rem;">
                         <thead>
