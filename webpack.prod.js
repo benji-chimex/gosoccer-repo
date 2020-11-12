@@ -16,11 +16,10 @@ module.exports = merge(common, {
     module: {
         rules: [
             {
-                test: /\.scss$/,
+                test: /\.css$/,
                 use: [
                     MiniCssExtractPlugin.loader,
-                    "css-loader",
-                    "sass-loader"
+                    "css-loader"
                 ]
             }
         ]
@@ -29,19 +28,20 @@ module.exports = merge(common, {
         new MiniCssExtractPlugin({
             filename: "[name].css"
         }),
-        new CleanWebpackPlugin()
+        // new CleanWebpackPlugin()
     ],
     optimization: {
         minimizer: [
             new OptimizeCssAssetsPlugin(),
             new TerserPlugin(),
-            // new HtmlWebpackPlugin({
-            //     minify: {
-            //         removeAttributeQuotes: true,
-            //         collapseWhitespace: true,
-            //         removeComments: true
-            //     }
-            // })
+            new HtmlWebpackPlugin({
+                minify: {
+                    removeAttributeQuotes: true,
+                    collapseWhitespace: true,
+                    removeComments: true
+                },
+                template: "src/template.html"
+            })
         ]
     }
 })

@@ -31,7 +31,7 @@ db.connectDB();
 //Configurations
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
-app.use("/public", express.static(path.resolve(__dirname, "../dist")));
+app.use(express.static(path.resolve(__dirname, "../dist")));
 
 // Avoid SPA
 app.get("/profile/:user", (req, res) => {

@@ -1,5 +1,5 @@
-import materialize from "./materialize"
 import main from "../main.css"
+import template from "../template.html"
 import Vue from "vue"
 import Vuex from "vuex"
 import VueRouter from "vue-router"
