@@ -7,6 +7,7 @@ const mongoose = require("mongoose");
 let crypto = require("crypto");
 const bcrypt = require("bcrypt");
 const app = express();
+const nodemailer = require("nodemailer");
 const history = require("connect-history-api-fallback");
 const path = require("path");
 const db = require("./database");
