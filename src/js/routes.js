@@ -97,12 +97,6 @@ export default [
         ]
     },
     {
-        path: "/_profile/:user",
-        components: {
-            "main": profile
-        }
-    },
-    {
         path: "/livescore",
         components: {
             "main": livescore

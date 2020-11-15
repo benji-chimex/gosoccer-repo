@@ -1,11 +1,11 @@
 let mongoose = require("mongoose");
-let database = "GoSoccer";
-let host = "127.0.0.1:27017";
+// let database = "GoSoccer";
+// let host = "127.0.0.1:27017";
 let Schema = mongoose.Schema;
 
 // Database connection
 let connectDB = () => {
-    mongoose.connect(`mongodb://${host}/${database}`, {useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false})
+    mongoose.connect(`mongodb+srv://ben1234:1234567.@gosoccer-cluster.bw77g.mongodb.net/gosoccer-Cluster?retryWrites=true&w=majority`, {useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false})
     .then(() => {
         console.log("Connection to database was successful")
     }).catch((err) => {

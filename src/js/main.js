@@ -1,4 +1,4 @@
-import main from "../main.css"
+import css from "../main.css"
 import template from "../template.html"
 import Vue from "vue"
 import Vuex from "vuex"
