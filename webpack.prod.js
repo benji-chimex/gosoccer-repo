@@ -40,7 +40,8 @@ module.exports = merge(common, {
                     collapseWhitespace: true,
                     removeComments: true
                 },
-                template: "src/template.html"
+                template: "src/template.html",
+                inject: false
             })
         ]
     }
