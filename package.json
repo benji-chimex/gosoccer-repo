@@ -5,7 +5,8 @@
   "main": "main.js",
   "scripts": {
     "start": "webpack --config webpack.dev.js",
-    "build": "webpack --config webpack.prod.js"
+    "build": "webpack --config webpack.prod.js",
+    "deploy": "sh deploy.sh"
   },
   "keywords": [
     "gosoccer",
